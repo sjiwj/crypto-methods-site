@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://sjiwj.github.io/crypto-methods-site/sitemap_index.xml
 Sitemap: https://sjiwj.github.io/crypto-methods-site/sitemap.xml
