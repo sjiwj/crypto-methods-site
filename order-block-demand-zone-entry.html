@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>订单块需求区入场方法：从识别到风控的完整体系</title>
+<meta name="description" content="订单块（Order Block）是价格行为交易中的核心概念。它指机构挂单密集的区域。通常表现为最后一根反向K线。在下跌趋势末端，最后一根阴线往往形成需求区。在上涨趋势末端，最后一根阳线往往形成供应区。需求区作为支撑，供应区作为阻力。识别订单块需结合K线实体（body）与影线（wick）。实体部分代表真实交易区间。影线…">
+<meta name="keywords" content="order block demand zone entry">
+<meta name="intent" content="informational">
+<meta name="articleSection" content="entry">
+<meta name="wordCount" content="1777">
+<meta name="experimentGroup" content="">
+<meta property="og:title" content="订单块需求区入场方法：从识别到风控的完整体系">
+<meta property="og:description" content="订单块（Order Block）是价格行为交易中的核心概念。它指机构挂单密集的区域。通常表现为最后一根反向K线。在下跌趋势末端，最后一根阴线往往形成需求区。在上涨趋势末端，最后一根阳线往往形成供应区。需求区作为支撑，供应区作为阻力。识别订单块需结合K线实体（body）与影线（wick）。实体部分代表真实交易区间。影线…">
+<meta property="og:type" content="article">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "订单块需求区入场方法：从识别到风控的完整体系", "description": "订单块（Order Block）是价格行为交易中的核心概念。它指机构挂单密集的区域。通常表现为最后一根反向K线。在下跌趋势末端，最后一根阴线往往形成需求区。在上涨趋势末端，最后一根阳线往往形成供应区。需求区作为支撑，供应区作为阻力。识别订单块需结合K线实体（body）与影线（wick）。实体部分代表真实交易区间。影线…", "about": ["body", "breakout", "candlestick", "closing price", "demand zone", "engulfing", "entry", "fibonacci", "hammer", "order block", "position sizing", "pullback", "resistance", "risk reward", "stop loss", "support", "take profit", "timeframe", "trend", "volume", "wick"], "keywords": "order block demand zone entry", "articleSection": "entry"}</script>
+<!-- 内部质检标注（不面向读者）: keyword=order block demand zone entry | intent=informational | dimension=entry | words=1777 | group= -->
+<style>
+:root{--ink:#1a1f29;--muted:#5b6472;--line:#e3e8ef;--bg:#fff;--accent:#0f6f5c;}
+*{box-sizing:border-box;}
+body{margin:0;background:#f5f7fa;color:var(--ink);font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.8;}
+.wrap{max-width:760px;margin:0 auto;padding:32px 20px 64px;background:var(--bg);}
+h1{font-size:1.9rem;line-height:1.35;margin:.2em 0 .6em;}
+h2{font-size:1.3rem;margin:1.8em 0 .6em;padding-bottom:.3em;border-bottom:1px solid var(--line);}
+p{margin:.9em 0;}
+ul{margin:.6em 0;padding-left:1.4em;}
+li{margin:.35em 0;}
+table.params{width:100%;border-collapse:collapse;margin:1.2em 0;font-size:.92rem;}
+table.params th,table.params td{border:1px solid var(--line);padding:.5em .7em;vertical-align:top;text-align:left;}
+table.params th{width:28%;background:#f0f3f6;color:var(--ink);white-space:nowrap;}
+code{background:#f0f3f6;padding:.1em .35em;border-radius:4px;font-size:.9em;}
+strong{color:var(--accent);}
+hr{border:0;border-top:1px solid var(--line);margin:2.4em 0;}
+.tag{display:inline-block;background:#eef4f2;color:var(--accent);border-radius:4px;padding:.1em .5em;margin:.15em .2em .15em 0;font-size:.8rem;text-decoration:none;}
+a.tag:hover{background:#e0ebe8;}
+a.ilink{color:var(--accent);text-decoration:none;border-bottom:1px dashed var(--accent);}
+a.ilink:hover{background:#eef4f2;}
+table.md{width:100%;border-collapse:collapse;margin:1.2em 0;font-size:.92rem;}
+table.md th,table.md td{border:1px solid var(--line);padding:.5em .7em;vertical-align:top;text-align:left;}
+table.md th{background:#f0f3f6;}
+</style>
+</head>
+<body>
+<article class="wrap">
+  <h1>订单块需求区入场方法：从识别到风控的完整体系</h1>
+  <h2>定义与适用场景（加密交易语境）</h2>
+<p>订单块（Order Block）是<a class="ilink" href="./al-brooks-price-action-system.html">价格行为</a>交易中的核心概念。它指机构挂单密集的区域。通常表现为最后一根反向<a class="ilink" href="./candlestick-chart-pattern-trading-strategy.html">K线</a>。在下跌趋势末端，最后一根阴线往往形成需求区。在上涨趋势末端，最后一根阳线往往形成<a class="ilink" href="./support-resistance-level-breakout.html">供应区</a>。需求区作为支撑，供应区作为阻力。识别订单块需结合K线实体（body）与影线（wick）。实体部分代表真实交易区间。影线部分反映拒绝价格。收盘价（closing price）是关键。实体收盘价<a class="ilink" href="./range-box-breakout-strategy.html">突破</a>订单块边界时，区域可能失效。时间周期（<a class="ilink" href="./4h-timeframe-swing-trading-method.html">timeframe</a>）决定订单块的有效性。高周期（如4小时、日线）的订单块更可靠。低周期（如15分钟）的订单块适合短线。趋势（<a class="ilink" href="./trend-following-trading-system.html">trend</a>）方向决定订单块类型。上升趋势中，需求区是<a class="ilink" href="./trend-pullback-entry-method.html">回调</a>做多区域。下降趋势中，供应区是反弹做空区域。加密市场波动大，订单块需结合<a class="ilink" href="./volume-price-action-confirmation.html">成交量</a>确认。BTC、ETH等主流币的订单块反应更迅速。SOL、BNB等也可应用，但需注意<a class="ilink" href="./liquidity-sweep-stop-hunt.html">流动性</a>差异。适用场景包括趋势回调、突破回踩。不适用于无序震荡市。</p>
+<h2>识别条件/信号确认</h2>
+<p>识别订单块需满足多个条件。首先，寻找价格剧烈波动的起点。通常有一根大实体K线。其反向的前一根K线即为订单块。例如，在上升趋势中，价格回调前最后一根阴线是需求区候选。该阴线的实体部分应被后续阳线快速<a class="ilink" href="./engulfing-candlestick-entry-signal.html">吞没</a>。影线部分可延伸，但实体收盘价需被突破。其次，订单块应位于关键支撑或阻力位。结合前高前低或<a class="ilink" href="./fibonacci-retracement-entry-method.html">斐波那契</a>回撤位。第三，时间周期需一致。在4小时图识别的订单块，应在1小时图等待<a class="ilink" href="./second-entry-after-pullback.html">入场</a>信号。第四，趋势方向需明确。用<a class="ilink" href="./moving-average-trend-filter.html">均线</a>或高低点结构判断趋势。第五，信号确认需K线形态配合。在需求区出现看涨吞没、<a class="ilink" href="./hammer-pin-bar-reversal-signal.html">锤子线</a>等。在供应区出现看跌吞没、射击之星等。第六，成交量放大增加可靠性。订单块形成时放量，<a class="ilink" href="./breakout-retest-entry-method.html">回测</a>时缩量更佳。第七，避免在重大新闻事件前入场。加密市场24小时交易，但流动性时段有差异。</p>
+<h2>入场触发与参考位</h2>
+<p>入场触发需等待价格回到订单块区域。具体入场方式有三种。第一种是限价单入场。在订单块实体边缘挂单。例如，需求区上沿为入场位。第二种是确认K线入场。等待价格进入区域后，出现反转K线（candlestick）收盘。如看涨吞没或长下影线锤子线。收盘价高于订单块实体中点时入场。第三种是突破回踩入场。价格突破订单块后回踩确认。入场位参考订单块实体50%位置。这是机构常用入场点。止损设置需结合结构。对于需求区多单，止损放在订单块实体下沿下方。或影线低点下方。具体距离根据波动率调整。通常为订单块高度的1-2倍<a class="ilink" href="./stop-loss-placement-methods.html">ATR</a>。<a class="ilink" href="./take-profit-target-methods.html">目标位</a>首先看前高阻力。其次看斐波那契扩展位。<a class="ilink" href="./risk-reward-ratio-position-sizing.html">风险回报比</a>至少1:2。入场setup需完整：趋势向上、订单块有效、信号确认。缺一不可。案例：ETH在4小时图上升趋势中，回调至需求区。出现看涨吞没K线，收盘价高于实体中点。入场多单，止损于影线低点。目标前高，回报比1:3。</p>
+<h2>止损、目标位与风险回报</h2>
+<p>止损设置是订单块交易的关键。止损位应放在订单块失效的位置。对于需求区，止损设在订单块实体下沿下方。或更保守地放在影线低点下方。止损距离需考虑市场波动。加密市场波动大，建议使用ATR指标。通常止损距离为1.5倍ATR。目标位设置分层次。第一目标为近期阻力位。第二目标为斐波那契扩展位（如1.272或1.618）。第三目标为前高或前低。风险回报比至少1:2才值得入场。理想情况为1:3以上。仓位管理需配合止损。单笔风险不超过总资金的1-2%。订单块交易胜率约50-60%。依靠高回报比盈利。<a class="ilink" href="./trailing-stop-exit-method.html">移动止损</a>保护利润。价格突破第一目标后，将止损移至入场位。部分平仓锁定利润。案例：BTC日线图需求区入场。止损设于实体下沿下方2%。第一目标前高，回报比1:2.5。第二目标扩展位，回报比1:4。分批平仓可提高稳定性。</p>
+<h2>多币种/周期案例标注</h2>
+<p>案例一：BTC 4小时图上升趋势。价格回调至需求区。该需求区为前期最后一根阴线。实体部分被阳线吞没。随后价格回踩需求区上沿。出现看涨吞没K线。入场多单，止损于阴线低点下方。目标前高，回报比1:3。案例二：ETH 1小时图下降趋势。价格反弹至供应区。供应区为前期最后一根阳线。实体部分被阴线吞没。价格回测供应区下沿。出现看跌吞没K线。入场空单，止损于阳线高点上方。目标前低，回报比1:2.5。案例三：SOL 15分钟图短线。需求区形成于快速下跌后的反转。价格回踩需求区，出现锤子线。入场多单，止损于锤子线低点。目标近期阻力，回报比1:2。案例四：BNB 日线图。供应区位于历史阻力位。价格反弹至供应区，出现射击之星。入场空单，止损于射击之星高点。目标支撑位，回报比1:3。不同周期订单块效果不同。高周期更稳定，低周期需快速止盈。</p>
+<h2>常见误用与风控要点</h2>
+<p>常见误用一：将任意K线视为订单块。订单块需有明确的反转和成交量配合。误用二：忽略趋势方向。逆势交易订单块成功率低。误用三：止损过窄。加密市场波动大，止损需给足空间。误用四：入场过早。价格未进入区域或未确认信号就入场。误用五：忽视时间周期。不同周期订单块冲突时，以高周期为准。风控要点：每笔交易风险固定。使用止损单，避免情绪干扰。避免在流动性低的时段交易。如凌晨或周末。订单块失效后立即离场。不扛单。结合多时间框架分析。高周期定方向，低周期找入场。记录交易日志，复盘订单块识别准确性。加密市场24小时交易，需设置警报。避免错过入场或止损。</p>
+  <h2>方法参数一览</h2><table class="params"><tbody><tr><th>入场触发</th><td>入场触发需等待价格回到订单块区域</td></tr><tr><th>参考周期</th><td>4小时</td></tr><tr><th>止损依据</th><td>止损位应放在订单块失效的位置</td></tr><tr><th>目标位</th><td>目标位设置分层次</td></tr><tr><th>风险回报比</th><td>1:2</td></tr></tbody></table>
+  <hr>
+  <div><span class="tag">body</span><a class="tag" href="./range-box-breakout-strategy.html">breakout</a><a class="tag" href="./candlestick-chart-pattern-trading-strategy.html">candlestick</a><span class="tag">closing price</span><a class="tag" href="./order-block-demand-zone-entry.html">demand zone</a><a class="tag" href="./engulfing-candlestick-entry-signal.html">engulfing</a><a class="tag" href="./second-entry-after-pullback.html">entry</a><a class="tag" href="./fibonacci-retracement-entry-method.html">fibonacci</a><a class="tag" href="./hammer-pin-bar-reversal-signal.html">hammer</a><a class="tag" href="./order-block-demand-zone-entry.html">order block</a><a class="tag" href="./risk-reward-ratio-position-sizing.html">position sizing</a><a class="tag" href="./trend-pullback-entry-method.html">pullback</a><a class="tag" href="./support-resistance-level-breakout.html">resistance</a><a class="tag" href="./risk-reward-ratio-position-sizing.html">risk reward</a><a class="tag" href="./stop-loss-placement-methods.html">stop loss</a><a class="tag" href="./support-resistance-level-breakout.html">support</a><a class="tag" href="./take-profit-target-methods.html">take profit</a><a class="tag" href="./4h-timeframe-swing-trading-method.html">timeframe</a><a class="tag" href="./trend-following-trading-system.html">trend</a><a class="tag" href="./volume-price-action-confirmation.html">volume</a><span class="tag">wick</span></div>
+</article>
+</body></html>

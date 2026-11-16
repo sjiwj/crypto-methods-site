@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Al Brooks 交易区间陷阱：识别、入场与风控</title>
+<meta name="description" content="Al Brooks 交易区间陷阱指价格在支撑与阻力之间反复震荡。交易者误将区间内的假突破视为趋势启动。在加密市场，这种陷阱常出现在横盘积累阶段。BTC 在 4 小时图上的窄幅整理是典型场景。区间内多空力量暂时平衡，流动性在两端堆积。价格行为上，区间由一系列重叠的 K 线构成。趋势暂时缺失，反转尝试频繁失败。积累阶段后…">
+<meta name="keywords" content="Al Brooks trading range trap">
+<meta name="intent" content="informational">
+<meta name="articleSection" content="method">
+<meta name="wordCount" content="1432">
+<meta name="experimentGroup" content="">
+<meta property="og:title" content="Al Brooks 交易区间陷阱：识别、入场与风控">
+<meta property="og:description" content="Al Brooks 交易区间陷阱指价格在支撑与阻力之间反复震荡。交易者误将区间内的假突破视为趋势启动。在加密市场，这种陷阱常出现在横盘积累阶段。BTC 在 4 小时图上的窄幅整理是典型场景。区间内多空力量暂时平衡，流动性在两端堆积。价格行为上，区间由一系列重叠的 K 线构成。趋势暂时缺失，反转尝试频繁失败。积累阶段后…">
+<meta property="og:type" content="article">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Al Brooks 交易区间陷阱：识别、入场与风控", "description": "Al Brooks 交易区间陷阱指价格在支撑与阻力之间反复震荡。交易者误将区间内的假突破视为趋势启动。在加密市场，这种陷阱常出现在横盘积累阶段。BTC 在 4 小时图上的窄幅整理是典型场景。区间内多空力量暂时平衡，流动性在两端堆积。价格行为上，区间由一系列重叠的 K 线构成。趋势暂时缺失，反转尝试频繁失败。积累阶段后…", "about": ["accumulation", "candlestick", "climax", "entry", "fibonacci", "liquidity", "price action", "resistance", "setup", "support", "timeframe", "trend"], "keywords": "Al Brooks trading range trap", "articleSection": "method"}</script>
+<!-- 内部质检标注（不面向读者）: keyword=Al Brooks trading range trap | intent=informational | dimension=method | words=1432 | group= -->
+<style>
+:root{--ink:#1a1f29;--muted:#5b6472;--line:#e3e8ef;--bg:#fff;--accent:#0f6f5c;}
+*{box-sizing:border-box;}
+body{margin:0;background:#f5f7fa;color:var(--ink);font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.8;}
+.wrap{max-width:760px;margin:0 auto;padding:32px 20px 64px;background:var(--bg);}
+h1{font-size:1.9rem;line-height:1.35;margin:.2em 0 .6em;}
+h2{font-size:1.3rem;margin:1.8em 0 .6em;padding-bottom:.3em;border-bottom:1px solid var(--line);}
+p{margin:.9em 0;}
+ul{margin:.6em 0;padding-left:1.4em;}
+li{margin:.35em 0;}
+table.params{width:100%;border-collapse:collapse;margin:1.2em 0;font-size:.92rem;}
+table.params th,table.params td{border:1px solid var(--line);padding:.5em .7em;vertical-align:top;text-align:left;}
+table.params th{width:28%;background:#f0f3f6;color:var(--ink);white-space:nowrap;}
+code{background:#f0f3f6;padding:.1em .35em;border-radius:4px;font-size:.9em;}
+strong{color:var(--accent);}
+hr{border:0;border-top:1px solid var(--line);margin:2.4em 0;}
+.tag{display:inline-block;background:#eef4f2;color:var(--accent);border-radius:4px;padding:.1em .5em;margin:.15em .2em .15em 0;font-size:.8rem;text-decoration:none;}
+a.tag:hover{background:#e0ebe8;}
+a.ilink{color:var(--accent);text-decoration:none;border-bottom:1px dashed var(--accent);}
+a.ilink:hover{background:#eef4f2;}
+table.md{width:100%;border-collapse:collapse;margin:1.2em 0;font-size:.92rem;}
+table.md th,table.md td{border:1px solid var(--line);padding:.5em .7em;vertical-align:top;text-align:left;}
+table.md th{background:#f0f3f6;}
+</style>
+</head>
+<body>
+<article class="wrap">
+  <h1>Al Brooks 交易区间陷阱：识别、入场与风控</h1>
+  <h2>定义与适用场景（加密交易语境）</h2>
+<p><a class="ilink" href="./al-brooks-price-action-system.html">al brooks</a> 交易区间陷阱指价格在支撑与阻力之间反复震荡。交易者误将区间内的假<a class="ilink" href="./range-box-breakout-strategy.html">突破</a>视为<a class="ilink" href="./trend-following-trading-system.html">趋势</a>启动。在加密市场，这种陷阱常出现在横盘积累阶段。BTC 在 4 小时图上的窄幅整理是典型场景。区间内多空力量暂时平衡，<a class="ilink" href="./liquidity-sweep-stop-hunt.html">流动性</a>在两端堆积。价格行为上，区间由一系列重叠的 K 线构成。趋势暂时缺失，反转尝试频繁失败。积累阶段后期，价格可能突然突破。但突破常缺乏跟进，形成陷阱。<a class="ilink" href="./al-brooks-climax-exhaustion.html">高潮</a>阶段则伴随放量冲刺，但迅速回落。<a class="ilink" href="./fibonacci-retracement-entry-method.html">斐波那契</a>回撤位在区间内常充当临时<a class="ilink" href="./support-resistance-level-breakout.html">支撑阻力</a>。时间框架越小，陷阱越频繁。日线图上的区间更可靠。识别区间需结合支撑阻力与价格行为。避免在区间中部追涨杀跌。</p>
+<h2>识别条件/信号确认</h2>
+<p>识别区间陷阱需多信号共振。首先，价格在明确支撑阻力间运行。至少两次触及同一水平未破。其次，K 线重叠度高，实体小，影线长。这是多空犹豫的表现。第三，突破时<a class="ilink" href="./volume-price-action-confirmation.html">成交量</a>未显著放大。缺乏流动性的突破易失败。第四，趋势指标如<a class="ilink" href="./moving-average-trend-filter.html">均线</a>走平。价格围绕均线上下穿梭。第五，假突破后快速收回。例如，价格上破阻力后立即跌回。此时形成看跌<a class="ilink" href="./engulfing-candlestick-entry-signal.html">吞没</a>或 <a class="ilink" href="./hammer-pin-bar-reversal-signal.html">pin bar</a> 等反转 K 线。第六，斐波那契回撤位在区间内被反复测试。61.8% 或 78.6% 位置常引发反转。第七，时间框架确认。小<a class="ilink" href="./4h-timeframe-swing-trading-method.html">周期</a>突破需大周期同向验证。若日线仍处区间，4 小时突破多为陷阱。第八，高潮量出现后价格滞涨。这是积累转派发的信号。综合以上，可确认区间陷阱成立。</p>
+<h2><a class="ilink" href="./second-entry-after-pullback.html">入场</a>触发与参考位</h2>
+<p>入场需等待明确触发信号。在区间上沿假突破后，等待价格跌回区间内。此时出现看跌 K 线组合，如乌云盖顶或看跌吞没。入场位设在反转 K 线收盘价下方一档。<a class="ilink" href="./stop-loss-placement-methods.html">止损</a>设于假突破高点上方。若做多，则在区间下沿假突破后入场。等待看涨 K 线，如锤子线或看涨吞没。入场位在反转 K 线收盘价上方。止损设于假突破低点下方。参考位可用斐波那契回撤。例如，假突破后价格回撤至 61.8% 处，若出现支撑阻力转换，可加仓。在 BTC 4 小时图中，区间上沿假突破后，价格常<a class="ilink" href="./trend-pullback-entry-method.html">回踩</a> 50% 斐波那契位。此时结合 K 线确认入场。ETH 日线图同理。入场需分批，首仓轻，确认后加。避免在区间中部入场，因方向不明。时间框架上，小周期入场需大周期支撑。例如，1 小时图信号需 4 小时图同向。</p>
+<h2>止损、<a class="ilink" href="./take-profit-target-methods.html">目标位</a>与风险回报</h2>
+<p>止损设置基于假突破极值。做空时，止损在假突破高点上方 1-2%。做多时，止损在假突破低点下方 1-2%。止损幅度需结合波动率调整。加密市场波动大，可放宽至 3%。目标位首先看区间对侧。例如，做空后目标为区间下沿。若突破区间，可<a class="ilink" href="./trailing-stop-exit-method.html">移动止损</a>保护利润。<a class="ilink" href="./risk-reward-ratio-position-sizing.html">风险回报比</a>至少 1:2。在区间陷阱中，盈亏比常更优。因为假突破后价格常快速返回区间中部。第二目标可设于斐波那契扩展位。例如，区间高度投射至 1.272 或 1.618。但需注意，区间边界可能被多次测试后失效。此时应止损离场。时间框架影响目标距离。日线区间目标大于 4 小时区间。案例：SOL 4 小时图区间上沿假突破，做空止损 2%，目标区间下沿，盈亏比 1:3。</p>
+<h2>多币种/周期案例标注</h2>
+<p>案例一：BTC 日线图，2023 年 6 月。价格在 25,000-31,000 美元区间震荡。多次假突破 31,000 阻力。每次突破后快速回落，形成看跌吞没。在 31,500 假突破后入场做空。止损 32,000，目标 26,000。盈亏比 1:3。案例二：ETH 4 小时图，2023 年 8 月。区间 1,800-1,850 美元。价格假突破 1,850 后，K 线出现 pin bar。入场做空，止损 1,870，目标 1,800。案例三：BNB 1 小时图，2023 年 9 月。区间 200-210 美元。假突破 210 后，价格回踩 61.8% 斐波那契位。结合看跌 K 线入场。案例四：SOL 日线图，2023 年 10 月。区间 20-25 美元。假突破 25 后，价格跌回区间。目标 20 美元。这些案例展示不同币种与周期。核心是识别假突破与反转信号。</p>
+<h2>常见误用与风控要点</h2>
+<p>误用一：在区间中部追涨杀跌。价格未到边界，方向随机。应等待边界测试。误用二：忽视时间框架。小周期突破未获大周期确认。易被陷阱捕获。误用三：突破后立即入场。缺乏 K 线确认，易假突破。应等待收盘确认。误用四：止损过窄。加密波动大，易被扫损。应结合 ATR 设置。误用五：忽略流动性。低流动性时段突破易失败。应避开亚洲早盘。风控要点：单笔风险不超过 2%。分批入场，首仓轻。假突破后若价格未快速返回，可能真突破。应止损。结合趋势过滤。只在逆趋势的区间边界做反转。趋势市中，区间陷阱较少。高潮量出现后，谨慎追单。积累阶段末期，突破可能真实。需结合成交量与价格行为。</p>
+  <h2>方法参数一览</h2><table class="params"><tbody><tr><th>入场触发</th><td>入场需等待明确触发信号</td></tr><tr><th>参考周期</th><td>日线</td></tr><tr><th>止损依据</th><td>做空时，止损在假突破高点上方 1-2%</td></tr><tr><th>目标位</th><td>目标位首先看区间对侧</td></tr><tr><th>风险回报比</th><td>1:2</td></tr></tbody></table>
+  <hr>
+  <div><span class="tag">accumulation</span><a class="tag" href="./candlestick-chart-pattern-trading-strategy.html">candlestick</a><a class="tag" href="./al-brooks-climax-exhaustion.html">climax</a><a class="tag" href="./second-entry-after-pullback.html">entry</a><a class="tag" href="./fibonacci-retracement-entry-method.html">fibonacci</a><a class="tag" href="./liquidity-sweep-stop-hunt.html">liquidity</a><a class="tag" href="./al-brooks-price-action-system.html">price action</a><a class="tag" href="./support-resistance-level-breakout.html">resistance</a><span class="tag">setup</span><a class="tag" href="./support-resistance-level-breakout.html">support</a><a class="tag" href="./4h-timeframe-swing-trading-method.html">timeframe</a><a class="tag" href="./trend-following-trading-system.html">trend</a></div>
+</article>
+</body></html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Al Brooks 测量移动（Measured Move）交易方法：加密市场应用指南</title>
+<meta name="description" content="Al Brooks 的测量移动是一种基于价格行为的趋势目标预测方法。它假设趋势中的第一段推动（leg1）与后续同向推动（leg2）在幅度上大致相等。在加密交易中，该方法适用于趋势明确的单边行情。">
+<meta name="keywords" content="Al Brooks measured move">
+<meta name="intent" content="informational">
+<meta name="articleSection" content="method">
+<meta name="wordCount" content="2013">
+<meta name="experimentGroup" content="">
+<meta property="og:title" content="Al Brooks 测量移动（Measured Move）交易方法：加密市场应用指南">
+<meta property="og:description" content="Al Brooks 的测量移动是一种基于价格行为的趋势目标预测方法。它假设趋势中的第一段推动（leg1）与后续同向推动（leg2）在幅度上大致相等。在加密交易中，该方法适用于趋势明确的单边行情。">
+<meta property="og:type" content="article">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Al Brooks 测量移动（Measured Move）交易方法：加密市场应用指南", "description": "Al Brooks 的测量移动是一种基于价格行为的趋势目标预测方法。它假设趋势中的第一段推动（leg1）与后续同向推动（leg2）在幅度上大致相等。在加密交易中，该方法适用于趋势明确的单边行情。", "about": ["accumulation", "al brooks", "bar", "breakdown", "breakout", "candlestick", "climax", "closing price", "consolidation", "engulfing", "entry", "fibonacci", "hammer", "liquidity", "pin bar", "position sizing", "price action", "pullback", "range", "resistance", "retracement", "reversal", "risk reward", "setup", "stop loss", "support", "take profit", "timeframe", "trend", "volume"], "keywords": "Al Brooks measured move", "articleSection": "method"}</script>
+<!-- 内部质检标注（不面向读者）: keyword=Al Brooks measured move | intent=informational | dimension=method | words=2013 | group= -->
+<style>
+:root{--ink:#1a1f29;--muted:#5b6472;--line:#e3e8ef;--bg:#fff;--accent:#0f6f5c;}
+*{box-sizing:border-box;}
+body{margin:0;background:#f5f7fa;color:var(--ink);font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.8;}
+.wrap{max-width:760px;margin:0 auto;padding:32px 20px 64px;background:var(--bg);}
+h1{font-size:1.9rem;line-height:1.35;margin:.2em 0 .6em;}
+h2{font-size:1.3rem;margin:1.8em 0 .6em;padding-bottom:.3em;border-bottom:1px solid var(--line);}
+p{margin:.9em 0;}
+ul{margin:.6em 0;padding-left:1.4em;}
+li{margin:.35em 0;}
+table.params{width:100%;border-collapse:collapse;margin:1.2em 0;font-size:.92rem;}
+table.params th,table.params td{border:1px solid var(--line);padding:.5em .7em;vertical-align:top;text-align:left;}
+table.params th{width:28%;background:#f0f3f6;color:var(--ink);white-space:nowrap;}
+code{background:#f0f3f6;padding:.1em .35em;border-radius:4px;font-size:.9em;}
+strong{color:var(--accent);}
+hr{border:0;border-top:1px solid var(--line);margin:2.4em 0;}
+.tag{display:inline-block;background:#eef4f2;color:var(--accent);border-radius:4px;padding:.1em .5em;margin:.15em .2em .15em 0;font-size:.8rem;text-decoration:none;}
+a.tag:hover{background:#e0ebe8;}
+a.ilink{color:var(--accent);text-decoration:none;border-bottom:1px dashed var(--accent);}
+a.ilink:hover{background:#eef4f2;}
+table.md{width:100%;border-collapse:collapse;margin:1.2em 0;font-size:.92rem;}
+table.md th,table.md td{border:1px solid var(--line);padding:.5em .7em;vertical-align:top;text-align:left;}
+table.md th{background:#f0f3f6;}
+</style>
+</head>
+<body>
+<article class="wrap">
+  <h1>Al Brooks 测量移动（Measured Move）交易方法：加密市场应用指南</h1>
+  <h2>定义与适用场景（加密交易语境）</h2>
+<p><a class="ilink" href="./al-brooks-price-action-system.html">al brooks</a> 的测量移动是一种基于价格行为的<a class="ilink" href="./trend-following-trading-system.html">趋势</a>目标预测方法。它假设趋势中的第一段推动（leg1）与后续同向推动（leg2）在幅度上大致相等。在加密交易中，该方法适用于趋势明确的单边行情。</p>
+<p>测量移动的核心是识别趋势的起点与第一段推动。起点通常出现在 accumulation 阶段之后。accumulation 是价格在<a class="ilink" href="./support-resistance-level-breakout.html">支撑</a>区域横盘吸筹的过程。<a class="ilink" href="./range-box-breakout-strategy.html">突破</a> accumulation 上沿后，价格形成第一段推动。这段推动的幅度称为测量基准。</p>
+<p>在趋势中，<a class="ilink" href="./al-brooks-climax-exhaustion.html">climax</a> 是推动的极端点。climax 常伴随<a class="ilink" href="./volume-price-action-confirmation.html">成交量</a>激增与长阳线。climax 之后往往出现<a class="ilink" href="./trend-pullback-entry-method.html">回调</a>或盘整。测量移动的<a class="ilink" href="./take-profit-target-methods.html">目标位</a>从回调结束点起算，加上第一段推动的幅度。</p>
+<p>该方法与 <a class="ilink" href="./fibonacci-retracement-entry-method.html">fibonacci</a> 扩展位有相似逻辑。fibonacci 扩展位常用 1.0 倍、1.272 倍等比例。测量移动的 1.0 倍目标与 fibonacci 1.0 扩展位重合时，可靠性更高。</p>
+<p>测量移动适用于任何 <a class="ilink" href="./4h-timeframe-swing-trading-method.html">timeframe</a>。在 1 小时图或 4 小时图上，测量移动目标常与 support/resistance 区域重合。在日线图上，测量移动可用于规划中线目标。</p>
+<p>在加密市场，<a class="ilink" href="./liquidity-sweep-stop-hunt.html">liquidity</a> 分布影响测量移动的达成概率。上方 liquidity 密集区（如<a class="ilink" href="./stop-loss-placement-methods.html">止损</a>聚集区）常吸引价格向测量目标移动。但若目标位前方有强 resistance，则需谨慎。</p>
+<p>测量移动是 price action 交易者的常用工具。它不依赖指标，仅基于价格结构。在趋势清晰的 BTC、ETH 等主流币种上效果较好。在震荡市中，测量移动容易失效。</p>
+<h2>识别条件/信号确认</h2>
+<p>识别测量移动需确认趋势结构。首先，价格必须形成明确的 trend。趋势可用更高的高点与更高的低点来定义。在上升趋势中，第一段推动从趋势起点开始。</p>
+<p>第一段推动的起点通常是 accumulation 突破点。突破点之前，价格在 support 区域横盘。突破时伴随成交量放大。突破后，价格形成连续阳线或长阳线。</p>
+<p>第一段推动的终点是 climax。climax 表现为价格加速上涨。此时 <a class="ilink" href="./candlestick-chart-pattern-trading-strategy.html">candlestick</a> 出现长阳线或跳空缺口。climax 后，价格进入回调或盘整。</p>
+<p>回调的深度是关键。回调应守住第一段推动的 50% 回撤位。若回调跌破 50%，则测量移动的假设减弱。回调结束的信号是出现反转 candlestick。例如，在 support 附近出现<a class="ilink" href="./hammer-pin-bar-reversal-signal.html">锤子线</a>或看涨<a class="ilink" href="./engulfing-candlestick-entry-signal.html">吞没</a>形态。</p>
+<p>回调结束后，价格再次向上突破。突破点称为 setup 触发点。此时可确认第二段推动开始。第二段推动的起点是回调低点。</p>
+<p>测量移动的目标位计算如下：第一段推动幅度 = climax 高点 - 起点低点。目标位 = 回调低点 + 第一段推动幅度。该目标位常与 fibonacci 1.0 扩展位重合。</p>
+<p>在加密市场，还需关注 liquidity 区域。若目标位附近有大量止损单或限价单，价格可能加速冲向目标。反之，若目标位前方有强 resistance，则可能提前反转。</p>
+<h2><a class="ilink" href="./second-entry-after-pullback.html">入场</a>触发与参考位</h2>
+<p>入场触发基于 candlestick 确认。在回调结束后的突破点，等待 candlestick 收盘确认。例如，在回调低点出现看涨吞没或 pin bar 后，下一根阳线突破前高时入场。</p>
+<p>入场位可设在突破 candlestick 的高点上方一档。或使用限价单在回调低点附近挂单。但限价单风险较高，需等待确认信号。</p>
+<p>setup 的确认需要两个条件。第一，回调不破第一段推动的 50% 回撤位。第二，突破 candlestick 收盘价高于回调期间的最高点。</p>
+<p>在加密市场，入场时需考虑滑点。建议使用突破入场，而非提前挂单。突破入场可避免假突破。</p>
+<p>参考位包括第一段推动的起点与终点。起点是 accumulation 突破点，终点是 climax 高点。这两个位置可用于计算目标位。</p>
+<p>入场后，止损设在回调低点下方。若价格跌破回调低点，则测量移动失效。止损位也可设在第一段推动的 61.8% 回撤位下方。</p>
+<p>在趋势中，entry 也可在第二段推动的回调中寻找。例如，第二段推动中出现小回调，可加仓。但需确保趋势未破坏。</p>
+<h2>止损、目标位与风险回报</h2>
+<p>止损位应设在测量移动假设失效的位置。通常设在回调低点下方一档。若价格跌破回调低点，则第二段推动可能失败。</p>
+<p>止损位也可参考 support 区域。若回调低点恰好在 support 上方，止损可设在 support 下方。这样可避免被正常波动扫损。</p>
+<p>目标位是测量移动的 1.0 倍扩展位。该位置常与 fibonacci 1.0 扩展位重合。若重合，则目标可靠性高。</p>
+<p><a class="ilink" href="./risk-reward-ratio-position-sizing.html">风险回报比</a>需至少 1:2。入场位到止损位的距离为风险。入场位到目标位的距离为回报。若风险回报比不足 1:2，则放弃交易。</p>
+<p>在加密市场，波动较大。可分批止盈。例如，在 0.618 扩展位止盈一半，在 1.0 扩展位止盈剩余。</p>
+<p>若价格在目标位附近出现 climax 或反转 candlestick，可提前止盈。climax 表现为长阳线后突然出现长阴线。</p>
+<p>测量移动目标位也可与 resistance 区域结合。若目标位恰好在 resistance 下方，则可在 resistance 下方止盈。</p>
+<h2>多币种/周期案例标注</h2>
+<p>案例一：BTC 4 小时图上升趋势。价格在 60000 附近 accumulation 后突破。第一段推动从 60000 涨至 65000。climax 出现在 65000。随后回调至 63000，守住 50% 回撤位。回调低点出现看涨吞没 candlestick。突破 63500 入场。测量目标 = 63000 + (65000-60000) = 68000。实际价格在 68000 附近遇到 resistance 后回落。</p>
+<p>案例二：ETH 1 小时图下降趋势。价格在 3000 附近盘整后跌破 support。第一段推动从 3000 跌至 2800。climax 出现在 2800。反弹至 2900 后再次下跌。反弹高点出现看跌吞没。跌破 2850 入场做空。测量目标 = 2900 - (3000-2800) = 2700。价格在 2700 附近出现 support 后反弹。</p>
+<p>案例三：SOL 日线图上升趋势。价格在 100 附近 accumulation 后突破。第一段推动从 100 涨至 150。climax 在 150。回调至 130，出现锤子线。突破 135 入场。测量目标 = 130 + 50 = 180。价格在 180 附近达到 fibonacci 1.0 扩展位后回调。</p>
+<p>案例四：BNB 15 分钟图。价格在 300 附近箱体震荡。突破箱体上沿 310 后形成第一段推动至 330。回调至 320 后再次突破。测量目标 = 320 + 20 = 340。价格在 340 附近遇到 liquidity 密集区后加速至 345 后反转。</p>
+<h2>常见误用与风控要点</h2>
+<p>误用一：在震荡市中应用测量移动。震荡市中趋势不明确，测量移动容易失败。需确认 trend 存在后再使用。</p>
+<p>误用二：忽略 climax 后的回调深度。若回调跌破 50% 回撤位，则测量移动假设减弱。应等待更明确的 setup。</p>
+<p>误用三：目标位不结合 support/resistance。测量目标位若与强 resistance 重合，则可能提前反转。需结合 price action 判断。</p>
+<p>风控要点一：严格止损。测量移动是概率工具，不是确定性预测。每笔交易需设止损。</p>
+<p>风控要点二：仓位管理。单笔风险不超过总资金的 1%。在加密市场高波动下，可适当降低仓位。</p>
+<p>风控要点三：多周期验证。在低周期入场，需高周期趋势一致。例如，1 小时图做多，需 4 小时图趋势向上。</p>
+<p>风控要点四：关注 liquidity 事件。重大新闻或数据发布可能引发流动性枯竭，导致测量移动失效。避免在事件前重仓。</p>
+<p>风控要点五：避免过度交易。测量移动 setup 不常出现。耐心等待高概率机会。</p>
+  <h2>方法参数一览</h2><table class="params"><tbody><tr><th>入场触发</th><td>入场触发基于 candlestick 确认</td></tr><tr><th>参考周期</th><td>4 小时</td></tr><tr><th>止损依据</th><td>止损位应设在测量移动假设失效的位置</td></tr><tr><th>目标位</th><td>目标位是测量移动的 1.0 倍扩展位</td></tr></tbody></table>
+  <hr>
+  <div><span class="tag">accumulation</span><a class="tag" href="./al-brooks-price-action-system.html">al brooks</a><span class="tag">bar</span><span class="tag">breakdown</span><a class="tag" href="./range-box-breakout-strategy.html">breakout</a><a class="tag" href="./candlestick-chart-pattern-trading-strategy.html">candlestick</a><a class="tag" href="./al-brooks-climax-exhaustion.html">climax</a><span class="tag">closing price</span><span class="tag">consolidation</span><a class="tag" href="./engulfing-candlestick-entry-signal.html">engulfing</a><a class="tag" href="./second-entry-after-pullback.html">entry</a><a class="tag" href="./fibonacci-retracement-entry-method.html">fibonacci</a><a class="tag" href="./hammer-pin-bar-reversal-signal.html">hammer</a><a class="tag" href="./liquidity-sweep-stop-hunt.html">liquidity</a><a class="tag" href="./hammer-pin-bar-reversal-signal.html">pin bar</a><a class="tag" href="./risk-reward-ratio-position-sizing.html">position sizing</a><a class="tag" href="./al-brooks-price-action-system.html">price action</a><a class="tag" href="./trend-pullback-entry-method.html">pullback</a><a class="tag" href="./range-box-breakout-strategy.html">range</a><a class="tag" href="./support-resistance-level-breakout.html">resistance</a><span class="tag">retracement</span><span class="tag">reversal</span><a class="tag" href="./risk-reward-ratio-position-sizing.html">risk reward</a><span class="tag">setup</span><a class="tag" href="./stop-loss-placement-methods.html">stop loss</a><a class="tag" href="./support-resistance-level-breakout.html">support</a><a class="tag" href="./take-profit-target-methods.html">take profit</a><a class="tag" href="./4h-timeframe-swing-trading-method.html">timeframe</a><a class="tag" href="./trend-following-trading-system.html">trend</a><a class="tag" href="./volume-price-action-confirmation.html">volume</a></div>
+</article>
+</body></html>
