@@ -49,7 +49,7 @@ table.md th{background:#f0f3f6;}
 <article class="wrap">
   <h1>摆动高低点结构法（Swing High/Low Structure Method）：趋势判定、突破回踩与入场体系</h1>
   <h2>一、定义与适用场景（加密交易语境）</h2>
-<p>摆动高低点结构法用价格自身留下的摆动点来定义<a class="ilink" href="./trend-following-trading-system.html">趋势</a>。摆动高点（swing high）是左右各若干根<a class="ilink" href="./candlestick-chart-pattern-trading-strategy.html">K线</a>都未超越的局部峰值。摆动低点（swing low）是左右各若干根K线都未跌破的局部谷值。参数通常取左右各2到3根K线。</p>
+<p>摆动高低点结构法用价格自身留下的摆动点来定义<a class="ilink" href="./trend-following-trading-system.html">趋势</a>。摆动高点（swing high）是左右各若干根<a class="ilink" href="./candlestick-chart-pattern-trading-strategy.html">K线</a>都未超越的局部峰值。摆动低点（swing low）是左右各若干根K线都未<a class="ilink" href="./bear-flag-breakdown-pattern.html">跌破</a>的局部谷值。参数通常取左右各2到3根K线。</p>
 <p>上升趋势的结构定义是：摆动高点与摆动低点同步抬高。下降趋势则是两者同步降低。高低点开始重叠、不再创新，即进入震荡或结构转换。</p>
 <p>该方法在加密市场适用性高。BTC、ETH 等主流币<a class="ilink" href="./liquidity-sweep-stop-hunt.html">流动性</a>好，摆动点清晰。24 小时连续交易使跳空少，结构连续性优于传统股市。</p>
 <p>结构法把趋势、<a class="ilink" href="./trend-pullback-entry-method.html">回调</a>、突破三类问题统一到同一坐标系。价格突破前一个摆动高点，视为 <a class="ilink" href="./range-box-breakout-strategy.html">breakout</a>。价格跌破前一个摆动低点，视为 breakdown。两者之间的运动是 continuation。</p>
@@ -60,7 +60,7 @@ table.md th{background:#f0f3f6;}
 <h2>二、识别条件/信号确认</h2>
 <p>第一步是标注摆动点。选择固定参数，例如左右各 2 根 K 线。参数一旦确定，全程不随意更改。否则结构会被主观重画。</p>
 <p>第二步是判定结构序列。列出最近 4 到 6 个摆动点，检查高低点排列。HH+HL 为上升结构。LH+LL 为下降结构。混合排列视为无趋势。</p>
-<p>第三步是等待确认，而不是预测。突破摆动高点需要收盘价站上，而非仅影线穿越。收盘确认能过滤大量假突破。</p>
+<p>第三步是等待确认，而不是预测。突破摆动高点需要收盘价站上，而非仅影线穿越。收盘确认能过滤大量<a class="ilink" href="./false-breakout-trap-entry.html">假突破</a>。</p>
 <p>第四步是观察突破后的行为。有效 breakout 常伴随<a class="ilink" href="./volume-price-action-confirmation.html">成交量</a>放大与实体饱满的 K 线。突破后立即收回，视为失败突破。</p>
 <p>第五步是确认回调质量。健康 pullback 幅度通常在前期推动段的 30% 到 50%。回调 K 线实体缩小、下影增多，说明抛压有限。</p>
 <p>第六步是结构不破原则。只要回调低点高于前一个摆动低点，上升结构就成立。跌破则结构降级，setup 作废。</p>
@@ -93,7 +93,7 @@ table.md th{background:#f0f3f6;}
 <p>结构法不预测顶部与底部。它只跟随已确认的高低点序列。承认这一点，才能稳定执行。</p>
   <h2>方法参数一览</h2><table class="params"><tbody><tr><th>入场触发</th><td>第一类是突破入场：价格收盘突破摆动高点后，于下一根 K 线开盘或回踩突破位时 entry</td></tr><tr><th>参考周期</th><td>日线</td></tr><tr><th>止损依据</th><td>止损应放在结构失效处，而非固定百分比</td></tr><tr><th>目标位</th><td>若价格在目标位前出现结构破坏，应主动离场而非死等目标</td></tr><tr><th>风险回报比</th><td>1:2</td></tr></tbody></table>
   <hr>
-  <div><span class="tag">breakdown</span><a class="tag" href="./range-box-breakout-strategy.html">breakout</a><a class="tag" href="./candlestick-chart-pattern-trading-strategy.html">candlestick</a><span class="tag">continuation</span><a class="tag" href="./second-entry-after-pullback.html">entry</a><span class="tag">momentum</span><a class="tag" href="./hammer-pin-bar-reversal-signal.html">pin bar</a><a class="tag" href="./risk-reward-ratio-position-sizing.html">position sizing</a><a class="tag" href="./trend-pullback-entry-method.html">pullback</a><a class="tag" href="./support-resistance-level-breakout.html">resistance</a><span class="tag">retracement</span><a class="tag" href="./risk-reward-ratio-position-sizing.html">risk reward</a><span class="tag">setup</span><a class="tag" href="./stop-loss-placement-methods.html">stop loss</a><a class="tag" href="./support-resistance-level-breakout.html">support</a><a class="tag" href="./4h-timeframe-swing-trading-method.html">timeframe</a><a class="tag" href="./trailing-stop-exit-method.html">trailing stop</a><a class="tag" href="./trend-following-trading-system.html">trend</a></div>
+  <div><a class="tag" href="./bear-flag-breakdown-pattern.html">breakdown</a><a class="tag" href="./range-box-breakout-strategy.html">breakout</a><a class="tag" href="./candlestick-chart-pattern-trading-strategy.html">candlestick</a><span class="tag">continuation</span><a class="tag" href="./second-entry-after-pullback.html">entry</a><span class="tag">momentum</span><a class="tag" href="./hammer-pin-bar-reversal-signal.html">pin bar</a><a class="tag" href="./risk-reward-ratio-position-sizing.html">position sizing</a><a class="tag" href="./trend-pullback-entry-method.html">pullback</a><a class="tag" href="./support-resistance-level-breakout.html">resistance</a><span class="tag">retracement</span><a class="tag" href="./risk-reward-ratio-position-sizing.html">risk reward</a><span class="tag">setup</span><a class="tag" href="./stop-loss-placement-methods.html">stop loss</a><a class="tag" href="./support-resistance-level-breakout.html">support</a><a class="tag" href="./4h-timeframe-swing-trading-method.html">timeframe</a><a class="tag" href="./trailing-stop-exit-method.html">trailing stop</a><a class="tag" href="./trend-following-trading-system.html">trend</a></div>
   <hr><section class="refs"><h2>参考来源</h2><ol class="refs-list"><li><a href="https://www.ironcladresearch.com/learn/technical-analysis/swing-highs-and-lows" target="_blank" rel="noopener noreferrer">Swing Highs &amp; Swing Lows Explained: Reading Market Structure（ironcladresearch.com）</a></li></ol></section>
 </article>
 </body></html>
